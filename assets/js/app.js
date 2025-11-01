@@ -118,7 +118,7 @@ const onSubmit = eve =>{
   
   cl(stdObj)
   stdForm.reset();
-  stdArr.unshift(stdObj);
+  stdArr.push(stdObj);
  
   localStorage.setItem("stdArr", JSON.stringify(stdArr));
   
@@ -135,7 +135,7 @@ const onSubmit = eve =>{
                     <td><i onclick="onRemove(this)" class="fa-solid fa-trash text-danger"></i>
                     </td>
                 `
-    studentContainer.prepend(tr);
+    studentContainer.append(tr);
   
   Swal.fire({
     title : " DATA ADDED SUCCESSFULY!!!",

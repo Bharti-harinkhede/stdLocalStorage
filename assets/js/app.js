@@ -71,7 +71,7 @@ const onEdit = (ele) => {
 const onRemove = (ele) =>{
   Swal.fire({
   title: "Are you sure?",
-  text: "You won't this todo Item!",
+  text: "You won't this Student Data!",
   icon: "warning",
   showCancelButton: true,
   confirmButtonColor: "#3085d6",
